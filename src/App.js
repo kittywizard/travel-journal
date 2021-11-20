@@ -1,7 +1,11 @@
+import Header from './components/Header';
+import Module from './components/Module';
+
 export default function App() {
     return (
-        <div>
-            test
+        <div className="app">
+            <Header />
+            <Module />
         </div>
     )
 }
