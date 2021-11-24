@@ -1,5 +1,8 @@
 
 export default function Module(props) {
+
+    console.log(props.item.imageUrl);
+    
     return (
         <section className="section--module">
             <div className="module--flex">
