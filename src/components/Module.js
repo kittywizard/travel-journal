@@ -11,7 +11,7 @@ export default function Module(props) {
                         <i className="fas fa-map-marker-alt map-icon"></i> 
                         <span className="module--location--name">{props.item.location}</span>
                     </span>
-                    <a href="http://google.com" className="module--link">View on Google Maps</a>
+                    <a href={props.item.googleMapsUrl} className="module--link" target="_blank" rel="noreferrer">View on Google Maps</a>
                 </div>
                 <h2 className="module--headline">{props.item.title}</h2>
                 <p className="module--date">{props.item.startDate} - {props.item.endDate}</p>
