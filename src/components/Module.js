@@ -1,14 +1,19 @@
 
 export default function Module(props) {
-    console.log(props)
     return (
         <section className="section--module">
-            <div>
-                <img src={props.item.imageUrl} className="module--img"></img>
+            <div className="module--flex">
+                <img src={props.item.imageUrl} className="module--img" alt={props.item.location}></img>
             </div>
-            <div>
-                <span className="module--location">{props.item.location}</span> <a href="#">View on Google Maps</a>
-                <h2>{props.item.title}</h2>
+            <div className="module--flex">
+                <div className="module--location">
+                    <span>
+                        <i className="fas fa-map-marker-alt map-icon"></i> 
+                        <span className="module--location--name">{props.item.location}</span>
+                    </span>
+                    <a href="http://google.com" className="module--link">View on Google Maps</a>
+                </div>
+                <h2 className="module--headline">{props.item.title}</h2>
                 <p className="module--date">{props.item.startDate} - {props.item.endDate}</p>
                 <p className="module--desc">{props.item.description}</p>
             </div>
