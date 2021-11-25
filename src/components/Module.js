@@ -2,10 +2,10 @@
 export default function Module(props) {
 
     console.log(props.item.imageUrl);
-    
+
     return (
         <section className="section--module">
-            <div className="module--flex">
+            <div className="module--flex--img">
                 <img src={props.item.imageUrl} className="module--img" alt={props.item.location}></img>
             </div>
             <div className="module--flex">
